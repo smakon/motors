@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.shadow {
+  box-shadow: -0.25rem -0.25rem 1rem 0rem #ffffff, 0.25rem 0.25rem 1rem 0rem #ababab;
+}
+
+.inner-shadow {
+  box-shadow: inset -0.25rem -0.25rem 1rem 0rem #ffffff, inset 0.25rem 0.25rem 1rem 0rem #ababab;
+}/*# sourceMappingURL=style.css.map */
