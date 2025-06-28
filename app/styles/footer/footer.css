@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+  height: auto;
+  min-height: 2.69rem;
+  background-color: #f5f5f5;
+  box-shadow: 0rem -0.25rem 1rem 0rem rgb(171, 171, 171);
+  padding: 0.1rem 0.5rem;
+}
+.footer__buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+.footer__buttons > .button {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.footer__buttons > .button:first-child {
+  width: auto;
+}
+.footer__buttons > .button > svg {
+  width: 1.5rem;
+}
+.footer__buttons > .button.pass {
+  width: 4rem;
+  height: 1.7rem;
+  min-width: 3.88rem;
+  min-height: 1.56rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+.footer__buttons > .button.pass > .half-left,
+.footer__buttons > .button.pass .half-right {
+  height: 100%;
+  width: 0.6rem;
+  border: 2px solid #4a4a4a;
+}
+.footer__buttons > .button.pass > .half-left {
+  border-right: none;
+}
+.footer__buttons > .button.pass > .half-right {
+  border-left: none;
+}
+.footer__buttons > .button__text {
+  font-size: 0.75rem;
+}/*# sourceMappingURL=footer.css.map */

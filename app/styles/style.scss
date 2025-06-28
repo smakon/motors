@@ -1,9 +1,11 @@
 @use "./main.scss" as *;
 
-* {
-   padding: 0;
-   margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+// @import "./buttons/buttons.scss";
+// @import "./header/header.scss";
+
+* {
    font-family: $font-family;
    font-optical-sizing: auto;
    font-weight: normal;
@@ -11,14 +13,20 @@
    font-variation-settings: "wdth" 100;
 }
 
-.shadow {
-   box-shadow:
-      -0.25rem -0.25rem 1rem 0rem $bg-color,
-      0.25rem 0.25rem 1rem 0rem $shadow-color;
+.outdoor-shadow {
+   box-shadow: $block-shadow;
 }
 
 .inner-shadow {
-   box-shadow:
-      inset -0.25rem -0.25rem 1rem 0rem $bg-color,
-      inset 0.25rem 0.25rem 1rem 0rem $shadow-color;
+   box-shadow: $block-inner-shadow;
+}
+
+body,
+html {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   @include display-flex(column, center, space-between, 0, nowrap);
 }

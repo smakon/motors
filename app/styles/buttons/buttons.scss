@@ -1,0 +1,27 @@
+@use '../main.scss' as *;
+
+.spec-button{
+   padding: 0.5rem 1rem;
+   margin: 0.5rem 1rem;
+   
+   text-align: center;
+
+   &--accept{
+      background-color: $accept-button-color;
+   }
+
+   &--warning{
+      background-color: $warning-button-color;
+   }
+
+   &--regular{
+      background-color: $regular-button-color;
+   }
+
+   &--info{
+      background-color: $info-button-color;
+      border-radius: 100%;
+   }
+}
+
+

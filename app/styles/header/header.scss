@@ -1,0 +1,42 @@
+@use "../main.scss" as *;
+
+.burger-menu {
+   &__line {
+      width: 100%;
+      height: auto;
+
+      min-width: 1.56rem;
+      min-height: 0.31rem;
+
+      background-color: $shadow-color;
+
+      border-radius: 15px;
+   }
+}
+.header {
+   width: 100%;
+
+   min-width: 20rem;
+   min-height: 3.13rem;
+
+   background-color: $block-bg-color;
+
+   @include display-flex(row, center, space-between, 0.5dvh, nowrap);
+
+   &__avatar {
+      background-color: $regular-button-color;
+      border-radius: 100px;
+
+      min-width: 2.13rem;
+      min-height: 2.13rem;
+
+      font-size: small;
+   }
+   &__burger-menu {
+      background-color: transparent;
+      width: 1.56rem;
+      height: 1.19rem;
+
+      @include display-flex(column, center, center, 0.4dvh, nowrap);
+   }
+}

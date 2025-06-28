@@ -1,0 +1,18 @@
+.spec-button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  text-align: center;
+}
+.spec-button--accept {
+  background-color: #1abc9c;
+}
+.spec-button--warning {
+  background-color: #ff3b30;
+}
+.spec-button--regular {
+  background-color: #ababab;
+}
+.spec-button--info {
+  background-color: #2e3a8a;
+  border-radius: 100%;
+}/*# sourceMappingURL=buttons.css.map */
