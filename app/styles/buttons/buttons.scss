@@ -1,27 +1,44 @@
-@use '../main.scss' as *;
+@use "../main.scss" as *;
 
-.spec-button{
+$button-border-radius: 3rem;
+
+.spec-button {
+   @include display-flex(row, center, center, 0, nowrap);
+
    padding: 0.5rem 1rem;
-   margin: 0.5rem 1rem;
-   
+
    text-align: center;
 
-   &--accept{
+   min-width: 1rem;
+   min-height: 1rem;
+
+   width: 20rem;
+   height: 2rem;
+   &--accept {
+      border-radius: $button-border-radius;
       background-color: $accept-button-color;
    }
 
-   &--warning{
+   &--warning {
+      border-radius: $button-border-radius;
       background-color: $warning-button-color;
    }
-
-   &--regular{
+   
+   &--regular {
+      border-radius: $button-border-radius;
       background-color: $regular-button-color;
    }
 
-   &--info{
-      background-color: $info-button-color;
+   &--info {
+      width: 0.2rem;
+      height: 0.2rem;
+      padding: 0.3rem;
+
+      text-align: center;
+
+      @include display-flex(row, center, center, 0, nowrap);
+
+      border: 2px solid $info-button-color;
       border-radius: 100%;
    }
 }
-
-

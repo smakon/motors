@@ -1,0 +1,50 @@
+@use "../main.scss" as *;
+
+.moto-card {
+   @include display-flex(row, center, center, 1rem, nowrap);
+
+   width: 95%;
+   height: auto;
+
+   min-width: 17.5rem;
+   min-height: 4.38rem;
+
+   border-radius: 19px;
+
+   position: relative;
+
+   padding-inline: 1rem;
+
+   &__photo-wrapper {
+      min-width: 23%;
+      min-height: 100%;
+
+      @include display-flex(row, center, center, 0rem, nowrap);
+   }
+
+   &__button {
+      padding: 1rem 2rem;
+      font-weight: bold;
+   }
+
+   &__info-button {
+      position: absolute;
+      left: 0.5rem;
+      top: 1rem;
+   }
+
+   &__photo {
+      min-width: 60%;
+      min-height: 60%;
+   }
+
+   &__cost-wrapper {
+      @include display-flex(column, center, center, 0.1rem, nowrap);
+      white-space: nowrap;
+      text-align: center;
+
+      & > * {
+         font-weight: bold;
+      }
+   }
+}

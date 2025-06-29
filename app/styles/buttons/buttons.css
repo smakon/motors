@@ -1,18 +1,40 @@
 .spec-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: nowrap;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 1rem;
   text-align: center;
+  min-width: 1rem;
+  min-height: 1rem;
+  width: 20rem;
+  height: 2rem;
 }
 .spec-button--accept {
+  border-radius: 3rem;
   background-color: #1abc9c;
 }
 .spec-button--warning {
+  border-radius: 3rem;
   background-color: #ff3b30;
 }
 .spec-button--regular {
+  border-radius: 3rem;
   background-color: #ababab;
 }
 .spec-button--info {
-  background-color: #2e3a8a;
+  width: 0.2rem;
+  height: 0.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  border: 2px solid #2e3a8a;
   border-radius: 100%;
 }/*# sourceMappingURL=buttons.css.map */

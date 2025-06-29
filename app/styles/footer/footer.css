@@ -27,7 +27,7 @@
 .footer__buttons > .button:first-child {
   width: auto;
 }
-.footer__buttons > .button > svg {
+.footer__buttons > .button > img {
   width: 1.5rem;
 }
 .footer__buttons > .button.pass {
