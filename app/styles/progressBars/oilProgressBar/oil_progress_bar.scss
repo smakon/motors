@@ -1,5 +1,9 @@
 @use "../../main.scss" as *;
 
+:root {
+   --km: 50%;
+}
+
 .oil-progress-bar {
    position: relative;
    width: 20%;
@@ -34,7 +38,7 @@
       position: absolute;
       z-index: 1;
       width: 92%;
-      height: 50%;
+      height: var(--km);
    }
 
    &__text-km {
