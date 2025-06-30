@@ -5,6 +5,8 @@
 **motors** — это веб-приложение для отображения и аренды мотоциклов. Интерфейс реализован с помощью HTML и SCSS/CSS, а для стилизации используется TailwindCSS. Приложение отображает карточки мотоциклов с информацией о пробеге, стоимости аренды и уровнем масла, а также содержит стилизованные элементы управления.
 
 > Верстка выполнена по макету Pixso: [https://pixso.net/app/editor/8uPI2idLxSnEVg3HSycq6A](https://pixso.net/app/editor/8uPI2idLxSnEVg3HSycq6A)
+>
+> Сайт размещён на GitHub Pages: [https://smakon.github.io/motors/](https://smakon.github.io/motors/app)
 
 ## Стэк
 
