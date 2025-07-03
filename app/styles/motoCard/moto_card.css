@@ -1,21 +1,22 @@
-.moto-card {
+.motorbike-card {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   flex-wrap: nowrap;
-  width: 95%;
-  height: auto;
+  height: 50%;
   min-width: 17.5rem;
   min-height: 4.38rem;
   border-radius: 19px;
   position: relative;
   padding-inline: 1rem;
 }
-.moto-card__photo-wrapper {
-  min-width: 23%;
-  min-height: 100%;
+.motorbike-card__photo-wrapper {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,20 +24,22 @@
   gap: 0rem;
   flex-wrap: nowrap;
 }
-.moto-card__button {
+.motorbike-card__button {
   padding: 1rem 2rem;
   font-weight: bold;
 }
-.moto-card__info-button {
+.motorbike-card__info-button {
   position: absolute;
   left: 0.5rem;
   top: 1rem;
 }
-.moto-card__photo {
-  min-width: 60%;
-  min-height: 60%;
+.motorbike-card__photo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
-.moto-card__cost-wrapper {
+.motorbike-card__cost-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +49,12 @@
   white-space: nowrap;
   text-align: center;
 }
-.moto-card__cost-wrapper > * {
+.motorbike-card__cost-wrapper > * {
   font-weight: bold;
+}
+
+@media (min-width: 312px) and (max-width: 480px) {
+  .motorbike-card__photo-wrapper {
+    width: 500%;
+  }
 }/*# sourceMappingURL=moto_card.css.map */
