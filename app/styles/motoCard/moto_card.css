@@ -5,7 +5,8 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: nowrap;
-  height: 50%;
+  height: -moz-min-content;
+  height: min-content;
   min-width: 17.5rem;
   min-height: 4.38rem;
   border-radius: 19px;
@@ -25,7 +26,6 @@
   flex-wrap: nowrap;
 }
 .motorbike-card__button {
-  padding: 1rem 2rem;
   font-weight: bold;
 }
 .motorbike-card__info-button {
@@ -56,5 +56,15 @@
 @media (min-width: 312px) and (max-width: 480px) {
   .motorbike-card__photo-wrapper {
     width: 500%;
+  }
+}
+@media (width >= 375px) {
+  .motorbike-card__cost-wrapper {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .motorbike-card {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=moto_card.css.map */

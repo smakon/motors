@@ -3,7 +3,7 @@
 .motorbike-card {
    @include display-flex(row, center, center, 1rem, nowrap);
 
-   height: 50%;
+   height: min-content;
 
    min-width: 17.5rem;
    min-height: 4.38rem;
@@ -22,7 +22,6 @@
    }
 
    &__button {
-      padding: 1rem 2rem;
       font-weight: bold;
    }
 
@@ -56,3 +55,18 @@
       }
    }
 }
+
+@media (width >= 375px){
+   .motorbike-card{
+      &__cost-wrapper{
+         flex-direction: row;
+      }
+   }
+}
+
+@media (min-width: 768px){
+   .motorbike-card{
+      flex-direction: column;
+   }
+}
+

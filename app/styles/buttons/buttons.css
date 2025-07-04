@@ -9,8 +9,10 @@
   text-align: center;
   min-width: 1rem;
   min-height: 1rem;
-  width: 20rem;
-  height: 2rem;
+  width: -moz-min-content;
+  width: min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 .spec-button--accept {
   border-radius: 3rem;

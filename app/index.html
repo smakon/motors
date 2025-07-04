@@ -18,11 +18,35 @@
 	<body>
 		<!-- Header -->
 		<header class="header outdoor-shadow px-10">
+			<!-- Avatar -->
 			<img
-				src=""
+				src="../shared/img/avatar.png"
 				alt="Avatar"
-				class="header__avatar max-sm:size-9 md:size-12"
+				class="header__avatar w-1/12 max-sm:size-9 md:size-12"
 			/>
+
+			<!-- Stat Score -->
+			<div
+				class="stat__motors-score outdoor-shadow flex flex-col items-start w-min max-sm:hidden px-4 py-2 rounded-2xl"
+			>
+				<p>Motorsбаллы</p>
+				<div class="size-1/5 flex flex-row items-center gap-1">
+					<p>55</p>
+					<img src="../shared/img/dollar.png" alt="dollar" class="w-3/4" />
+				</div>
+			</div>
+
+			<!-- Stat km-->
+			<div
+				class="stat__motors-km outdoor-shadow flex flex-col items-start max-sm:hidden px-4 py-2 rounded-2xl"
+			>
+				<p>Мои поездки</p>
+				<div class="size-1/5 flex flex-row items-center gap-1">
+					<p>102</p>
+					<p>km</p>
+				</div>
+			</div>
+			<!-- Menu Button -->
 			<div class="header__burger-menu">
 				<div class="burger-menu__line"></div>
 				<div class="burger-menu__line"></div>
@@ -33,7 +57,7 @@
 		<!-- Main -->
 		<main class="main">
 			<div class="cards">
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6 ">
+				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
 					<div class="motorbike-card__photo-wrapper">
 						<button
 							class="motorbike-card__info-button spec-button--info spec-button"
@@ -43,27 +67,34 @@
 						<img class="motorbike-card__photo" src="../shared/img/moto_1.png" />
 					</div>
 
-					<div class="oil-progress-bar" style="--km: 60%">
-						<div class="oil-progress-bar__text-km">60 km</div>
-						<div class="oil-progress-bar__glass"></div>
-						<img
-							src="../shared/img/oil.png"
-							alt="oil"
-							class="oil-progress-bar__back-liquid"
-						/>
+					<div class="w-min h-full flex items-center justify-around gap-6">
+						<div class="oil-progress-bar" style="--km: 60%">
+							<div class="oil-progress-bar__text-km">60 km</div>
+							<div class="oil-progress-bar__glass"></div>
+							<img
+								src="../shared/img/oil.png"
+								alt="oil"
+								class="oil-progress-bar__back-liquid"
+							/>
+						</div>
+
+						<div
+							class="flex w-2/5 justify-center items-center gap-4 w-min min-[768px]:flex-col"
+						>
+							<div class="motorbike-card__cost-wrapper">
+								<p>150</p>
+								<p>р/час</p>
+							</div>
+							<button
+								class="motorbike-card__button spec-button spec-button--accept"
+							>
+								GO!
+							</button>
+						</div>
 					</div>
-					<div class="motorbike-card__cost-wrapper">
-						<p>150</p>
-						<p>р/час</p>
-					</div>
-					<button
-						class="motorbike-card__button spec-button spec-button--accept"
-					>
-						GO!
-					</button>
 				</div>
 
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
+				<!-- <div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
 					<div class="motorbike-card__photo-wrapper">
 						<button
 							class="motorbike-card__info-button spec-button--info spec-button"
@@ -211,7 +242,7 @@
 					>
 						GO!
 					</button>
-				</div>
+				</div> -->
 			</div>
 		</main>
 		<!-- Footer -->

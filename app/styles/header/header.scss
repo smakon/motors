@@ -17,14 +17,13 @@
    width: 100%;
 
    min-width: 20rem;
-   min-height: 3.13rem;
+   min-height: 4.69rem;
 
    background-color: $block-bg-color;
 
    @include display-flex(row, center, space-between, 0.5dvh, nowrap);
 
    &__avatar {
-      background-color: $regular-button-color;
       border-radius: 100px;
 
       min-width: 2.13rem;
