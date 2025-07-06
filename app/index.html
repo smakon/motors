@@ -15,259 +15,267 @@
 		<link href="./styles/output.css" rel="stylesheet" />
 		<title>Motors</title>
 	</head>
+
 	<body>
-		<!-- Header -->
-		<header class="header outdoor-shadow px-10">
-			<!-- Avatar -->
-			<img
-				src="../shared/img/avatar.png"
-				alt="Avatar"
-				class="header__avatar w-1/12 max-sm:size-9 md:size-12"
-			/>
-
-			<!-- Stat Score -->
-			<div
-				class="stat__motors-score outdoor-shadow flex flex-col items-start w-min max-sm:hidden px-4 py-2 rounded-2xl"
+		<div
+			class="all-content h-full flex flex-col flex-nowrap items-center justify-center"
+		>
+			<!-- Header -->
+			<header
+				class="header outdoor-shadow px-10 flex items-center justify-between gap-[0.5dvh] flex-nowrap max-sm:h-[3.2rem] min-[480px]:h-24 min-xl:hidden"
 			>
-				<p>Motorsбаллы</p>
-				<div class="size-1/5 flex flex-row items-center gap-1">
-					<p>55</p>
-					<img src="../shared/img/dollar.png" alt="dollar" class="w-3/4" />
-				</div>
-			</div>
+				<!-- Avatar -->
+				<img
+					src="../shared/img/avatar.png"
+					alt="Avatar"
+					class="header__avatar w-1/12 max-sm:size-9 md:size-12"
+				/>
 
-			<!-- Stat km-->
-			<div
-				class="stat__motors-km outdoor-shadow flex flex-col items-start max-sm:hidden px-4 py-2 rounded-2xl"
-			>
-				<p>Мои поездки</p>
-				<div class="size-1/5 flex flex-row items-center gap-1">
-					<p>102</p>
-					<p>km</p>
-				</div>
-			</div>
-			<!-- Menu Button -->
-			<div class="header__burger-menu">
-				<div class="burger-menu__line"></div>
-				<div class="burger-menu__line"></div>
-				<div class="burger-menu__line"></div>
-			</div>
-		</header>
-
-		<!-- Main -->
-		<main class="main">
-			<div class="cards">
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
-					<div class="motorbike-card__photo-wrapper">
-						<button
-							class="motorbike-card__info-button spec-button--info spec-button"
-						>
-							i
-						</button>
-						<img class="motorbike-card__photo" src="../shared/img/moto_1.png" />
+				<!-- Stat Score -->
+				<div
+					class="stat__motors-score outdoor-shadow flex flex-col items-start w-min max-sm:hidden px-4 py-2 rounded-2xl h-14 gap-1"
+				>
+					<p>Motorsбаллы</p>
+					<div class="size-1/5 flex flex-row items-center gap-1">
+						<p>55</p>
+						<img src="../shared/img/dollar.png" alt="dollar" class="w-3/4" />
 					</div>
+				</div>
 
-					<div class="w-min h-full flex items-center justify-around gap-6">
-						<div class="oil-progress-bar" style="--km: 60%">
-							<div class="oil-progress-bar__text-km">60 km</div>
-							<div class="oil-progress-bar__glass"></div>
+				<!-- Stat km-->
+				<div
+					class="stat__motors-km outdoor-shadow flex flex-col items-start max-sm:hidden px-4 py-2 rounded-2xl h-14 gap-1"
+				>
+					<p>Мои поездки</p>
+					<div class="size-1/5 flex flex-row items-center gap-1">
+						<p>102</p>
+						<p>km</p>
+					</div>
+				</div>
+
+				<!-- About app -->
+				<div
+					class="header__about-app outdoor-shadow px-4 py-2 h-14 flex items-center justify-center rounded-2xl max-sm:hidden"
+				>
+					О приложении
+				</div>
+
+				<!-- Menu Button -->
+				<div class="header__burger-menu">
+					<div class="burger-menu__line"></div>
+					<div class="burger-menu__line"></div>
+					<div class="burger-menu__line"></div>
+				</div>
+			</header>
+
+			<!-- Main -->
+			<main class="main">
+				<div class="cards snap-y">
+					<!-- Card -->
+					<div
+						class="motorbike-card outdoor-shadow snap-center w-[95%] md:w-[18.7rem] md:h-[21rem]"
+					>
+						<div class="motorbike-card__photo-wrapper md:mt-8">
+							<button
+								class="motorbike-card__info-button spec-button--info spec-button"
+							>
+								i
+							</button>
 							<img
-								src="../shared/img/oil.png"
-								alt="oil"
-								class="oil-progress-bar__back-liquid"
+								class="motorbike-card__photo"
+								src="../shared/img/moto_1.png"
 							/>
 						</div>
 
 						<div
-							class="flex w-2/5 justify-center items-center gap-4 w-min min-[768px]:flex-col"
+							class="w-11/12 h-full flex items-center justify-around gap-6 md:w-full"
 						>
-							<div class="motorbike-card__cost-wrapper">
-								<p>150</p>
-								<p>р/час</p>
+							<div class="oil-progress-bar md:h-24 md:w-1/4" style="--km: 100%">
+								<div class="oil-progress-bar__text-km">211 km</div>
+								<div class="oil-progress-bar__glass"></div>
+								<img
+									src="../shared/img/oil.png"
+									alt="oil"
+									class="oil-progress-bar__back-liquid"
+								/>
 							</div>
-							<button
-								class="motorbike-card__button spec-button spec-button--accept"
+
+							<div
+								class="flex w-max justify-center items-center gap-4 w-min min-[768px]:flex-col"
 							>
-								GO!
+								<div class="motorbike-card__cost-wrapper">
+									<p>150</p>
+									<p>р/час</p>
+								</div>
+								<button
+									class="motorbike-card__button spec-button spec-button--accept"
+								>
+									GO!
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="motorbike-card outdoor-shadow snap-center w-[95%] md:w-[18.7rem] md:h-[21rem]"
+					>
+						<div class="motorbike-card__photo-wrapper md:mt-8">
+							<button
+								class="motorbike-card__info-button spec-button--info spec-button"
+							>
+								i
 							</button>
+							<img
+								class="motorbike-card__photo"
+								src="../shared/img/moto_2.png"
+							/>
+						</div>
+
+						<div
+							class="w-11/12 h-full flex items-center justify-around gap-6 md:w-full"
+						>
+							<div class="oil-progress-bar md:h-24 md:w-1/4" style="--km: 80%">
+								<div class="oil-progress-bar__text-km">80 km</div>
+								<div class="oil-progress-bar__glass"></div>
+								<img
+									src="../shared/img/oil.png"
+									alt="oil"
+									class="oil-progress-bar__back-liquid"
+								/>
+							</div>
+
+							<div
+								class="flex w-max justify-center items-center gap-4 w-min min-[768px]:flex-col"
+							>
+								<div class="motorbike-card__cost-wrapper">
+									<p>250</p>
+									<p>р/час</p>
+								</div>
+								<button
+									class="motorbike-card__button spec-button spec-button--accept"
+								>
+									GO!
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- Card -->
+					<div
+						class="motorbike-card outdoor-shadow snap-center w-[95%] md:w-[18.7rem] md:h-[21rem]"
+					>
+						<div class="motorbike-card__photo-wrapper md:mt-8">
+							<button
+								class="motorbike-card__info-button spec-button--info spec-button"
+							>
+								i
+							</button>
+							<img
+								class="motorbike-card__photo"
+								src="../shared/img/moto_3.png"
+							/>
+						</div>
+
+						<div
+							class="w-11/12 h-full flex items-center justify-around gap-6 md:w-full"
+						>
+							<div class="oil-progress-bar md:h-24 md:w-1/4" style="--km: 70%">
+								<div class="oil-progress-bar__text-km">70 km</div>
+								<div class="oil-progress-bar__glass"></div>
+								<img
+									src="../shared/img/oil.png"
+									alt="oil"
+									class="oil-progress-bar__back-liquid"
+								/>
+							</div>
+
+							<div
+								class="flex w-max justify-center items-center gap-4 w-min min-[768px]:flex-col"
+							>
+								<div class="motorbike-card__cost-wrapper">
+									<p>450</p>
+									<p>р/час</p>
+								</div>
+								<button
+									class="motorbike-card__button spec-button spec-button--accept"
+								>
+									GO!
+								</button>
+							</div>
+						</div>
+					</div>
+					<!-- Card -->
+					<div
+						class="motorbike-card outdoor-shadow snap-center w-[95%] md:w-[18.7rem] md:h-[21rem]"
+					>
+						<div class="motorbike-card__photo-wrapper md:mt-8">
+							<button
+								class="motorbike-card__info-button spec-button--info spec-button"
+							>
+								i
+							</button>
+							<img
+								class="motorbike-card__photo"
+								src="../shared/img/moto_4.png"
+							/>
+						</div>
+
+						<div
+							class="w-11/12 h-full flex items-center justify-around gap-6 md:w-full"
+						>
+							<div class="oil-progress-bar md:h-24 md:w-1/4" style="--km: 50%">
+								<div class="oil-progress-bar__text-km">50 km</div>
+								<div class="oil-progress-bar__glass"></div>
+								<img
+									src="../shared/img/oil.png"
+									alt="oil"
+									class="oil-progress-bar__back-liquid"
+								/>
+							</div>
+
+							<div
+								class="flex w-max justify-center items-center gap-4 w-min min-[768px]:flex-col"
+							>
+								<div class="motorbike-card__cost-wrapper">
+									<p>500</p>
+									<p>р/час</p>
+								</div>
+								<button
+									class="motorbike-card__button spec-button spec-button--accept"
+								>
+									GO!
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
+			</main>
 
-				<!-- <div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
-					<div class="motorbike-card__photo-wrapper">
-						<button
-							class="motorbike-card__info-button spec-button--info spec-button"
-						>
-							i
-						</button>
-						<img class="motorbike-card__photo" src="../shared/img/moto_2.png" />
+			<!-- Footer -->
+			<footer class="footer max-sm:h-16 min-[480px]:min-h-16">
+				<div class="footer__buttons">
+					<div class="footer__button">
+						<img src="../shared/icons/scan.svg" alt="" />
+						<p class="button__text">scan</p>
 					</div>
-
-					<div class="oil-progress-bar" style="--km: 20%">
-						<div class="oil-progress-bar__text-km">10 km</div>
-						<div class="oil-progress-bar__glass"></div>
-						<img
-							src="../shared/img/oil.png"
-							alt="oil"
-							class="oil-progress-bar__back-liquid"
-						/>
+					<div class="footer__button">
+						<img src="../shared/icons/map.svg" alt="map" />
+						<p class="button__text">map</p>
 					</div>
-					<div class="motorbike-card__cost-wrapper">
-						<p>250</p>
-						<p>р/час</p>
+					<div class="footer__button underline underline-offset-2">Motors</div>
+					<div class="footer__button pass">
+						<div class="half-left"></div>
+						<div class="footer__button">
+							<p class="text-xs">Pass</p>
+							<p class="text-[0.6rem]">подписка</p>
+						</div>
+						<div class="half-right"></div>
 					</div>
-					<button
-						class="motorbike-card__button spec-button spec-button--accept"
-					>
-						GO!
-					</button>
 				</div>
-
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
-					<div class="motorbike-card__photo-wrapper">
-						<button
-							class="motorbike-card__info-button spec-button--info spec-button"
-						>
-							i
-						</button>
-						<img class="motorbike-card__photo" src="../shared/img/moto_5.png" />
-					</div>
-
-					<div class="oil-progress-bar" style="--km: 105%">
-						<div class="oil-progress-bar__text-km">100 km</div>
-						<div class="oil-progress-bar__glass"></div>
-						<img
-							src="../shared/img/oil.png"
-							alt="oil"
-							class="oil-progress-bar__back-liquid"
-						/>
-					</div>
-					<div class="motorbike-card__cost-wrapper">
-						<p>500</p>
-						<p>р/час</p>
-					</div>
-					<button
-						class="motorbike-card__button spec-button spec-button--accept"
-					>
-						GO!
-					</button>
-				</div>
-
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
-					<div class="motorbike-card__photo-wrapper">
-						<button
-							class="motorbike-card__info-button spec-button--info spec-button"
-						>
-							i
-						</button>
-						<img class="motorbike-card__photo" src="../shared/img/moto_2.png" />
-					</div>
-
-					<div class="oil-progress-bar">
-						<div class="oil-progress-bar__text-km">20 km</div>
-						<div class="oil-progress-bar__glass"></div>
-						<img
-							src="../shared/img/oil.png"
-							alt="oil"
-							class="oil-progress-bar__back-liquid"
-						/>
-					</div>
-					<div class="motorbike-card__cost-wrapper">
-						<p>100</p>
-						<p>р/час</p>
-					</div>
-					<button
-						class="motorbike-card__button spec-button spec-button--accept"
-					>
-						GO!
-					</button>
-				</div>
-
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
-					<div class="motorbike-card__photo-wrapper">
-						<button
-							class="motorbike-card__info-button spec-button--info spec-button"
-						>
-							i
-						</button>
-						<img class="motorbike-card__photo" src="../shared/img/moto_4.png" />
-					</div>
-
-					<div class="oil-progress-bar" style="--km: 30%">
-						<div class="oil-progress-bar__text-km">15 km</div>
-						<div class="oil-progress-bar__glass"></div>
-						<img
-							src="../shared/img/oil.png"
-							alt="oil"
-							class="oil-progress-bar__back-liquid"
-						/>
-					</div>
-					<div class="motorbike-card__cost-wrapper">
-						<p>300</p>
-						<p>р/час</p>
-					</div>
-					<button
-						class="motorbike-card__button spec-button spec-button--accept"
-					>
-						GO!
-					</button>
-				</div>
-
-				<div class="motorbike-card outdoor-shadow w-[95%] md:w-3/6">
-					<div class="motorbike-card__photo-wrapper">
-						<button
-							class="motorbike-card__info-button spec-button--info spec-button"
-						>
-							i
-						</button>
-						<img class="motorbike-card__photo" src="../shared/img/moto_3.png" />
-					</div>
-
-					<div class="oil-progress-bar" style="--km: 80%">
-						<div class="oil-progress-bar__text-km">85 km</div>
-						<div class="oil-progress-bar__glass"></div>
-						<img
-							src="../shared/img/oil.png"
-							alt="oil"
-							class="oil-progress-bar__back-liquid"
-						/>
-					</div>
-					<div class="motorbike-card__cost-wrapper">
-						<p>350</p>
-						<p>р/час</p>
-					</div>
-					<button
-						class="motorbike-card__button spec-button spec-button--accept"
-					>
-						GO!
-					</button>
-				</div> -->
-			</div>
-		</main>
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="footer__buttons">
-				<div class="footer__buttons button">
-					<img src="../shared/icons/scan.svg" alt="" />
-					<p class="button__text">scan</p>
-				</div>
-				<div class="footer__buttons button">
-					<img src="../shared/icons/map.svg" alt="map" />
-					<p class="button__text">map</p>
-				</div>
-				<div class="footer__buttons button underline underline-offset-2">
-					Motors
-				</div>
-				<div class="footer__buttons button pass">
-					<div class="half-left"></div>
-					<div class="footer__buttons button">
-						<p class="text-xs">Pass</p>
-						<p class="text-[0.6rem]">подписка</p>
-					</div>
-					<div class="half-right"></div>
-				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
+		<!-- Aside -->
+		<aside
+			class="aside min-xl:flex max-xl:hidden h-full w-1/3 bg-block shadow-[-0.19rem_0.25rem_1rem_0rem_rgb(171, 171, 171)]"
+		></aside>
 	</body>
 </html>

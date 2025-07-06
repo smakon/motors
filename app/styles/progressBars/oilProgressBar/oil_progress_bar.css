@@ -4,15 +4,9 @@
 
 .oil-progress-bar {
   position: relative;
-  width: 20%;
-  height: 90%;
-  max-height: 20rem;
-  max-width: 10rem;
-  min-width: 3rem;
-  min-height: 1.88rem;
   background-color: #ffffff;
   border: 2px solid #ababab;
-  border-radius: 3dvh;
+  border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -20,6 +14,16 @@
   justify-content: flex-end;
   gap: 0;
   flex-wrap: nowrap;
+}
+@media (width < 48rem) {
+  .oil-progress-bar {
+    width: 20%;
+    height: 90%;
+    max-height: 25rem;
+    max-width: 4rem;
+    min-width: 3rem;
+    min-height: 2rem;
+  }
 }
 .oil-progress-bar__glass {
   position: absolute;

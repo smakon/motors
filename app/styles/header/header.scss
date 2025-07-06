@@ -17,11 +17,8 @@
    width: 100%;
 
    min-width: 20rem;
-   min-height: 4.69rem;
 
    background-color: $block-bg-color;
-
-   @include display-flex(row, center, space-between, 0.5dvh, nowrap);
 
    &__avatar {
       border-radius: 100px;

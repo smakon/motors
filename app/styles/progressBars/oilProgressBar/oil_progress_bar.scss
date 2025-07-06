@@ -6,19 +6,22 @@
 
 .oil-progress-bar {
    position: relative;
-   width: 20%;
-   height: 90%;
 
-   max-height: 20rem;
-   max-width: 10rem;
+   @media (width < 48rem) {
+      width: 20%;
 
-   min-width: 3rem;
-   min-height: 1.88rem;
+      height: 90%;
 
+      max-height: 25rem;
+      max-width: 4rem;
+
+      min-width: 3rem;
+      min-height: 2rem;
+   }
    background-color: $bg-color;
 
    border: 2px solid $shadow-color;
-   border-radius: 3dvh;
+   border-radius: 1rem;
 
    overflow: hidden;
 

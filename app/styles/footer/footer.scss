@@ -2,57 +2,47 @@
 
 .footer {
    width: 100%;
-   height: auto;
-
-   min-height: 2.69rem;
 
    background-color: $block-bg-color;
 
    box-shadow: 0rem -0.25rem 1rem 0rem rgb(171, 171, 171);
 
-   padding: 0.1rem 0.5rem;
+   @include display-flex(row, center, center, 0rem, nowrap);
    &__buttons {
       width: 100%;
-      @include display-flex(row, center, center, 1rem, nowrap);
+      @include display-flex(row, center, space-around, 0rem, nowrap);
+   }
 
-      & > .button {
-         width: 25%;
-         @include display-flex(column, center, center, 0rem, nowrap);
+   &__button {
+      width: min-content;
+      @include display-flex(column, center, normal, 0rem, nowrap);
 
-         &:first-child {
-            width: auto;
+      &:first-child {
+         width: auto;
+      }
+
+      & > img {
+         width: 1.5rem;
+      }
+
+      &.pass {
+         height: 1.7rem;
+
+         @include display-flex(row, center, space-between, 0.2rem, nowrap);
+
+         & > .half-left,
+         .half-right {
+            height: 100%;
+            width: 0.6rem;
+            border: 2px solid $hover-font-color;
          }
 
-         & > img {
-            width: 1.5rem;
+         & > .half-left {
+            border-right: none;
          }
 
-         &.pass {
-            width: 4rem;
-            height: 1.7rem;
-            min-width: 3.88rem;
-            min-height: 1.56rem;
-
-            @include display-flex(row, center, space-between, 1rem, nowrap);
-
-            & > .half-left,
-            .half-right {
-               height: 100%;
-               width: 0.6rem;
-               border: 2px solid $hover-font-color;
-            }
-
-            & > .half-left {
-               border-right: none;
-            }
-
-            & > .half-right {
-               border-left: none;
-            }
-         }
-
-         &__text {
-            font-size: 0.75rem;
+         & > .half-right {
+            border-left: none;
          }
       }
    }
