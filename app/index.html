@@ -12,6 +12,7 @@
 			rel="stylesheet"
 			href="./styles/progressBars/oilProgressBar/oil_progress_bar.css"
 		/>
+		<link rel="stylesheet" href="./styles/menu/menu.css" />
 		<link href="./styles/output.css" rel="stylesheet" />
 		<title>Motors</title>
 	</head>
@@ -32,25 +33,18 @@
 				/>
 
 				<!-- Stat Score -->
-				<div
-					class="stat__motors-score outdoor-shadow flex flex-col items-start w-min max-sm:hidden px-4 py-2 rounded-2xl h-14 gap-1"
-				>
+				<div class="menu__stat menu__stat--score outdoor-shadow">
 					<p>Motorsбаллы</p>
-					<div class="size-1/5 flex flex-row items-center gap-1">
+					<div class="menu__stat--inner">
 						<p>55</p>
 						<img src="../shared/img/dollar.png" alt="dollar" class="w-3/4" />
 					</div>
 				</div>
 
 				<!-- Stat km-->
-				<div
-					class="stat__motors-km outdoor-shadow flex flex-col items-start max-sm:hidden px-4 py-2 rounded-2xl h-14 gap-1"
-				>
+				<div class="menu__stat menu__stat--distance outdoor-shadow">
 					<p>Мои поездки</p>
-					<div class="size-1/5 flex flex-row items-center gap-1">
-						<p>102</p>
-						<p>km</p>
-					</div>
+					<p>102 km</p>
 				</div>
 
 				<!-- About app -->
@@ -275,7 +269,59 @@
 		</div>
 		<!-- Aside -->
 		<aside
-			class="aside min-xl:flex max-xl:hidden h-full w-1/3 bg-block shadow-[-0.19rem_0.25rem_1rem_0rem_rgb(171, 171, 171)]"
-		></aside>
+			class="menu min-xl:flex max-xl:hidden h-full w-1/3 bg-block shadow-[-0.19rem_0.25rem_1rem_0rem_rgb(171, 171, 171)]"
+		>
+			<div class="menu__top outdoor-shadow">
+				<div class="menu__profile-wrapper">
+					<div class="menu__name">
+						<span>Samik</span> 
+                  <img src="../shared/img/right.png" alt="arrow" />
+					</div>
+					<div class="menu__phone-number">+7 999 999 99 99</div>
+				</div>
+				<div class="menu__stats-wrapper">
+					<div class="menu__stat menu__stat--score outdoor-shadow">
+						<p>Motorsбаллы</p>
+						<div class="menu__stat--inner">
+							<span>55</span>
+							<img src="../shared/img/dollar.png" alt="dollar" />
+						</div>
+					</div>
+					<div class="menu__stat menu__stat-distance outdoor-shadow">
+						<p>Мои поездки</p>
+						<p>101 km</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu__center">
+				<div class="menu__block">
+					<div class="menu__block--payment">
+						<p>Способ оплаты</p>
+						<img src="../shared/img/add_card_button.png" alt="button" />
+					</div>
+					<hr />
+					<div class="menu__block--promo">
+						<p>Добавить промокод</p>
+						<img src="../shared/img/ticket.png" alt="ticket" />
+					</div>
+				</div>
+				<div class="menu__block">
+					<div class="menu__block--instruction">
+						<p>Как ехать?</p>
+						<span>Правила • Школа вождения</span>
+					</div>
+					<hr />
+					<div class="menu__block--chat">
+						<p>Чат поддержки</p>
+						<img src="../shared/img/message.png" alt="message" />
+					</div>
+				</div>
+				<div class="menu__block"><p>О приложении</p></div>
+			</div>
+			<div class="menu__bottom">
+				<p>Политика конфиденциальности</p>
+				<p>Страхование</p>
+			</div>
+		</aside>
 	</body>
 </html>

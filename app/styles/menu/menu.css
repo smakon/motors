@@ -1,0 +1,101 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  padding-inline: 2%;
+}
+.menu > * {
+  white-space: nowrap;
+}
+@media (width < 80rem) {
+  .menu {
+    display: none;
+  }
+}
+.menu__top, .menu__center, .menu__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+.menu__top {
+  border-radius: 0 0 0.94rem 0.94rem;
+  gap: 2rem;
+}
+.menu__stats-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.menu__profile-wrapper {
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: normal;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.menu__name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.menu__name > img {
+  width: 1rem;
+  height: 1rem;
+}
+.menu__phone-number {
+  color: #ababab;
+  font-size: 12px;
+}
+.menu__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.25rem;
+  flex-wrap: nowrap;
+  padding-inline: 1rem;
+  border-radius: 1rem;
+  height: 3.5rem;
+  font-size: medium;
+}
+@media (width < 40rem) {
+  .menu__stat {
+    display: none;
+  }
+}
+.menu__stat--inner {
+  width: 20%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: normal;
+  gap: 0.25rem;
+  flex-wrap: nowrap;
+}
+.menu__stat--score {
+  width: -moz-min-content;
+  width: min-content;
+}/*# sourceMappingURL=menu.css.map */
