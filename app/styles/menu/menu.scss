@@ -1,56 +1,133 @@
 @use "../main.scss" as *;
 
 .menu {
-   @include display-flex(column, center, space-between, 5rem);
+   @include display-flex(column, center, flex-start, 3rem);
 
    padding-inline: 2%;
 
-   & > *{
+   & > * {
       white-space: nowrap;
    }
 
-   @media (width < 80rem){
+   @media (width < 80rem) {
       display: none;
    }
 
-   &__top, &__center, &__bottom{
+   &__top,
+   &__center,
+   &__bottom {
       @include display-flex(column, center, space-around, 0rem, nowrap);
 
       width: 100%;
       height: min-content;
-
-      padding-block: 1rem;
-      padding-inline: 1rem;
    }
 
-   &__top{
+   &__top {
       border-radius: 0 0 0.94rem 0.94rem;
-      gap: 2rem
+      gap: 2rem;
+
+      padding: 1rem;
    }
 
-   &__stats-wrapper{
+   &__center {
+      gap: 3rem;
+   }
+
+   &__about-app {
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+
+      height: min-content;
+      min-height: 3.5rem;
+
+      text-align: center;
+
+      border-radius: 0.69rem;
+
+      @include display-flex(row, center, center, 0rem, nowrap);
+
+      @media (width >= 80rem) {
+         justify-content: flex-start;
+      }
+   }
+
+   &__bottom {
+      @include display-flex(column, flex-start, center, 0.3rem, nowrap);
+
+      & > p {
+         color: $shadow-color;
+         font-size: small;
+      }
+   }
+
+   &__block {
+      & > hr {
+         width: 100%;
+      }
+
+      width: 100%;
+      padding: 1rem;
+
+      border-radius: 0.94rem;
+
+      @include display-flex(column, center, space-between, 0.6rem, nowrap);
+
+      & > div {
+         width: 100%;
+      }
+
+      &--payment {
+         @include display-flex(row, center, space-between, 0rem, nowrap);
+      }
+
+      &--promo {
+         @include display-flex(row, center, space-between, 0rem, nowrap);
+      }
+
+      &--instruction {
+         @include display-flex(column, flex-start, space-between, 0rem, nowrap);
+
+         & > span {
+            color: $shadow-color;
+            font-size: 0.7rem;
+         }
+      }
+
+      &--chat {
+         @include display-flex(row, center, space-between, 0rem, nowrap);
+
+         & > img {
+            width: 1.49rem;
+            height: 1.5rem;
+
+            margin-right: 1rem;
+         }
+      }
+   }
+
+   &__stats-wrapper {
       @include display-flex(row, center, space-between, 1rem, nowrap);
 
       width: 100%;
    }
 
-   &__profile-wrapper{
+   &__profile-wrapper {
       width: 100%;
       height: min-content;
 
-      @include display-flex(column, flex-start, normal, 0rem, nowrap)
+      @include display-flex(column, flex-start, normal, 0rem, nowrap);
    }
 
-   &__name{
+   &__name {
       @include display-flex(row, center, flex-start, 0rem, nowrap);
 
-      & > img{
+      & > img {
          width: 1rem;
-         height: 1rem
+         height: 1rem;
       }
    }
 
-   &__phone-number{
+   &__phone-number {
       color: $shadow-color;
       font-size: 12px;
    }
@@ -70,16 +147,14 @@
 
       font-size: medium;
 
-      &--inner{
+      &--inner {
          width: 20%;
          height: 20%;
-         
-         @include display-flex(row, center, normal, 0.25rem, nowrap)
+
+         @include display-flex(row, center, normal, 0.25rem, nowrap);
       }
-      &--score{
+      &--score {
          width: min-content;
       }
-
-
    }
 }

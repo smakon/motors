@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
+  justify-content: flex-start;
+  gap: 3rem;
   flex-wrap: nowrap;
   padding-inline: 2%;
 }
@@ -25,12 +25,104 @@
   width: 100%;
   height: -moz-min-content;
   height: min-content;
-  padding-block: 1rem;
-  padding-inline: 1rem;
 }
 .menu__top {
   border-radius: 0 0 0.94rem 0.94rem;
   gap: 2rem;
+  padding: 1rem;
+}
+.menu__center {
+  gap: 3rem;
+}
+.menu__about-app {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  height: -moz-min-content;
+  height: min-content;
+  min-height: 3.5rem;
+  text-align: center;
+  border-radius: 0.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+@media (width >= 80rem) {
+  .menu__about-app {
+    justify-content: flex-start;
+  }
+}
+.menu__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: nowrap;
+}
+.menu__bottom > p {
+  color: #ababab;
+  font-size: small;
+}
+.menu__block {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: nowrap;
+}
+.menu__block > hr {
+  width: 100%;
+}
+.menu__block > div {
+  width: 100%;
+}
+.menu__block--payment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.menu__block--promo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.menu__block--instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.menu__block--instruction > span {
+  color: #ababab;
+  font-size: 0.7rem;
+}
+.menu__block--chat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+  flex-wrap: nowrap;
+}
+.menu__block--chat > img {
+  width: 1.49rem;
+  height: 1.5rem;
+  margin-right: 1rem;
 }
 .menu__stats-wrapper {
   display: flex;
